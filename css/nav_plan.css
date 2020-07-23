@@ -1,0 +1,31 @@
+body{
+    background-color: #e7e6e6;
+}
+button[type='submit']:hover{
+    background-color: #028162db;
+    color: white;
+}
+button[type='submit']{
+    color: #028162db;
+}
+button.edit[type='button']:hover{
+    background-color: #028162db;
+    color: white;
+}
+button.edit[type='button']
+{
+    color: #028162db;
+}
+.panel-heading{
+    text-align: center;
+    border-bottom:1px solid #d3cfcf; 
+    background-color:  #028162db; 
+    color: white;
+}
+.container-fluid{
+    min-height: 92%;
+}
+button[type='submit'] a{
+    text-decoration: none;
+    color: inherit;
+}

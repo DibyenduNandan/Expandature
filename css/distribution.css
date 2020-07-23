@@ -1,0 +1,43 @@
+body{
+    background-color: #e7e6e6;
+}
+.form-actions
+{   
+    margin: 0;
+    text-align: center;
+    background: transparent;
+
+}
+button[type='submit']
+{
+    color:  #028162db; 
+    margin: 0; 
+    border-color: #028162db;
+}
+button[type='submit']:hover{
+    background-color: #028162db;
+    color: white;
+}
+.panel-heading{
+    text-align: center;
+    border-bottom:1px solid #d3cfcf; 
+    background-color:  #028162db; 
+    color: white;
+}
+.container-fluid{
+    min-height: 92%;
+}
+.panel
+{
+    border-radius: 10px;
+}
+.glyphicon-user
+{
+    color:white;
+}
+@media (min-width: 992px)
+{
+    .col-md-4 {
+        width: 36.333333%;
+    }
+}

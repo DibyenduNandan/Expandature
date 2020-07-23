@@ -1,0 +1,61 @@
+body{
+    background-color: #e7e6e6;
+}
+button.edit[type="submit"]
+{
+    color: #337ab7; 
+    margin: 0; 
+    border-color: white;
+}
+button.edit[type="submit"]:hover
+{
+    color: #028162db;
+    background-color: #fff;
+}
+button[type='submit']:hover{
+    background-color: #028162db;
+    color: white;
+}
+button[type='submit']{
+    outline: none;
+    color: #028162db;
+    border: 1px solid #028162db;
+    background-color: #fff;
+    margin: 0;
+}
+.panel-heading{
+    text-align: center;
+    border-bottom:1px solid #d3cfcf; 
+    background-color:  #028162db; 
+    color: white;
+}
+.container-fluid{
+    min-height: 92%;
+}
+button[type='submit'] a{
+    text-decoration: none;
+    color: inherit;
+}
+button.edits[type="button"]{
+    float: right;
+    margin-top: 8%;
+    margin-right: 17%;
+    padding: 1%;
+    border-radius: 10%;
+    outline: none;
+    color: #028162db;
+    border: 1px solid #028162db;
+    background-color: #fff;
+}
+button.edits[type="button"]:hover
+{
+    background-color: #028162db;
+    border: 2px solid #fff;
+    color: #fff;
+
+}
+@media (min-width: 992px){
+.col-md-4 {
+    width: 36.333333%;
+}
+}
