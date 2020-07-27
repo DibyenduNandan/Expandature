@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                             <h4>LOGIN</h4>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="/final/login.php" method="POST">
+                            <form role="form" action="/login.php" method="POST">
                                 <div class="form-group">
                                     <label for="email">Email:</label>
                                     <input type="email" class="form-control" placeholder="Email"
