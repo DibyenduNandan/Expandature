@@ -1,6 +1,6 @@
 <?php
 $servername="db4free.net";
-$username="doping_123";
+$username="doping_1234";
 $password="abcdoping_1234";
 $database="expandature";
 
