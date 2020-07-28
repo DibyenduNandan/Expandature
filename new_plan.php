@@ -65,7 +65,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                     id="num2" required>
                             </div>
                             <button type="submit" name="submit"
-                                class="btn btn-block btn-outline-success btn-default"><a href="plan_details.php">Next</a>
+                                class="btn btn-block btn-outline-success btn-default">
+                                    <!-- <a href="plan_details.php"> -->
+                                        Next
+                                    <!-- </a> -->
                             </button>
                         </form>
                     </div>
