@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $number=$_POST['no'];
     $existSql= 'SELECT * FROM `expandature`.`users` WHERE email="'.mysqli_real_escape_string($conn,$email).'"';
     $result=mysqli_query($conn,$existSql);
+    echo var_dump($result);
     $numExistRows=mysqli_num_rows($result);
     // CHECK WHETHER EMAIL ALREADY EXIT IN THE DB OR NOT
     if($numExistRows > 0)
