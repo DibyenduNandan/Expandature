@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             {
                 $email=mysqli_real_escape_string($conn,$email);
                 $hash=password_hash($password, PASSWORD_DEFAULT);
-                $sql  = "INSERT INTO `expandature`.`users`(`name`,`email` ,`password`,`number`,`dt`) VALUES ('$username','$email','$hash','$number',current_timestamp())";
+                $sql  = "INSERT INTO `users`(`name`,`email` ,`password`,`number`,`dt`) VALUES ('$username','$email','$hash','$number',current_timestamp())";
                 $result=mysqli_query($conn,$sql);
                 if($result)
                 {
@@ -47,7 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 }
                 else
                 {
-                    $showerror="Please Enter correct Name";
+                    // $showerror="Please Enter correct Name";
+                    $showerror=$numExistRows;
                 }
             }
             else
