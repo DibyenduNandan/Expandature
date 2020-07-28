@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     include 'partition/_dbconnect.php';
     $amount=$_POST['num'];
     $people = $_POST['num2'];
-    $email=mysqli_real_escape_string($conn,$email);
+    $email=mysqli_real_escape_string($conn,$_SESSION['email']);
     $_SESSION['people']=$people;
     $_SESSION['amount']=$amount;
     $sql  = "INSERT INTO `budget`(`email` ,`initial_budget`,`no_of_people`) VALUES ('$email','$amount','$people')";
@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         header("location:plan_details.php");
     }
     else{
-        echo $sql;
         echo "Cannot Stored in the database";
     }
 }
