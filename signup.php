@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                             <h4>SIGN UP</h4>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="/final/signup.php" method="POST">
+                            <form role="form" action="/signup.php" method="POST">
                                 <div class="form-group">
                                     <label for="name">Name:</label>
                                     <input type="text" class="form-control" placeholder="Name" name="name" id="name"

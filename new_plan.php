@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <h4>Create New Plan</h4>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="/final/new_plan.php" method="POST">
+                        <form role="form" action="/new_plan.php" method="POST">
                             <div class="form-group">
                                 <label for="num">Initial Budget</label>
                                 <input type="number" class="form-control" placeholder="Initial Budget(Ex: 4000)"

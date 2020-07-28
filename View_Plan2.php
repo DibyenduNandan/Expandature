@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     ?>              <div class="<?php echo $class2; ?>" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLable" aria-hidden="true" style=<?php echo $display;?>>    
                     <div class="modal-dialog" role="document" style="height: 50%;width: 50%;margin-top: 4%;">
                         <div class="modal-content" style="height: 50%;position: relative;">
-                            <form role="form" action="connection2.php" method="POST">
+                            <form role="form" action="/connection2.php" method="POST">
                                 <input type="hidden" name="ord" id="ord" value="<?php echo $_GET['ord']; ?>">
                                 <input type="hidden" name="no" id="no" value="<?php echo $_GET['no']; ?>">
                                 <input type="hidden" name="sno" id="sno" value="<?php echo $_GET['sno']; ?>">

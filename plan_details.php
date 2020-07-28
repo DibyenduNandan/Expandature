@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             <div class="col-md-5" style="margin-left: 27%;">
                 <div class="panel">
                     <div class="panel-body">
-                        <form role="form" action="/final/plan_details.php" method="POST">
+                        <form role="form" action="/plan_details.php" method="POST">
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input type="text" class="form-control" placeholder="Enter Title(Ex: Trip to Goa)"

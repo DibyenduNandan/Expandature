@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 if ($img!="You Don't have bill")
                 {
         ?>          <div class="<?php echo $class2; ?>" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLable" aria-hidden="true" style=<?php echo $display;?>>    
-                    <form role="form" action="connection.php" method="POST">
+                    <form role="form" action="/connection.php" method="POST">
                         <input type="hidden" name="ord" id="ord" value="<?php echo $_GET['ord']; ?>">
                         <input type="hidden" name="no" id="no" value="<?php echo $_GET['no']; ?>">
                         <input type="hidden" name="sno" id="sno" value="<?php echo $_GET['sno']; ?>">
@@ -333,7 +333,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                                                 </div>
                                             <?php endif;?>
                                         <div class="panel-body">
-                                            <form role="form" action="View_Plan1.php" method="POST"
+                                            <form role="form" action="/View_Plan1.php" method="POST"
                                                 enctype="multipart/form-data">
                                                 <div class="form-group">
                                                     <label for="title">Title</label>

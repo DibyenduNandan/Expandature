@@ -55,7 +55,7 @@ $numExistRows=mysqli_num_rows($result);
                 <!-- THIS IS THE END OF CODE OF ERROR MESSAGE WHICH WILL SHOW WHEN THE FORM CANNOT BE SUBMITTED -->
 
                 <div class="panel-body">
-                    <form role="form" action="View_Plan3.php" method="POST" enctype="multipart/form-data">
+                    <form role="form" action="/View_Plan3.php" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="title">Title</label>
                             <input type="text" class="form-control" placeholder="Expance Name" name="title" id="title"
