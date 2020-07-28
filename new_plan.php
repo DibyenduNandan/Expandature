@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         header("location:plan_details.php");
     }
     else{
+        echo $sql;
         echo "Cannot Stored in the database";
     }
 }
