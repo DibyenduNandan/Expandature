@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 else
                 {
                     // $showerror="Please Enter correct Name";
-                    $showerror=$numExistRows;
+                    die($numExistRows);
                 }
             }
             else
