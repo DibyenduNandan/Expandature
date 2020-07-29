@@ -54,7 +54,7 @@ $numExistRows=mysqli_num_rows($result);
 $i=1;
 while($i<=$_GET['no'] && $numExistRows==0)
 {
-    $Sql= 'INSERT INTO `people`(`sno` ,`person_name`,`date_time`) VALUES ("'.$_GET['sno'].'","'.$_GET[$i].'",1000-01-01)';
+    $Sql= 'INSERT INTO `expandature`.`people`(`sno` ,`person_name`,`date_time`) VALUES ('.$_GET['sno'].',"'.$_GET[$i].'","1000-01-01")';
     $result=mysqli_query($conn,$Sql);
     $i+=1;
 }
