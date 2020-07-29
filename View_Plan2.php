@@ -51,15 +51,17 @@ $_SESSION['request']=$_REQUEST;
 $existSql= 'SELECT * FROM people where sno="'.$_GET['sno'].'"';
 $result=mysqli_query($conn,$existSql);
 $numExistRows=mysqli_num_rows($result);
+echo $numExistRows2
 $i=1;
 while($i<=$_GET['no'] && $numExistRows==0)
 {
-    $Sql= 'INSERT INTO `expandature`.`people`(`sno` ,`person_name`,`date_time`) VALUES ('.$_GET['sno'].',"'.$_GET[$i].'","1000-01-01")';
+    $Sql= 'INSERT INTO `expandature`.`people`(`sno` ,`person_name`,`date_time`) VALUES ("'.$_GET['sno'].'","'.$_GET[$i].'","1000-01-01")';
     $result=mysqli_query($conn,$Sql);
     echo $Sql;
     echo var_dump($result);
     $i+=1;
 }
+die();
 $permission=0;
 $class="";
 $class2="modal fade";
