@@ -51,7 +51,7 @@ $_SESSION['request']=$_REQUEST;
 $existSql= 'SELECT * FROM people where sno="'.$_GET['sno'].'"';
 $result=mysqli_query($conn,$existSql);
 $numExistRows=mysqli_num_rows($result);
-echo $numExistRows2
+echo $numExistRows2;
 $i=1;
 while($i<=$_GET['no'] && $numExistRows==0)
 {
