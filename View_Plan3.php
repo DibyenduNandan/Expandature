@@ -8,6 +8,8 @@ $msg="";
 $css_class="";
 if (isset($_POST['submit']))
 {
+    echo ;
+    die();
     include 'partition/_dbconnect.php';
     include 'partition/array_to_name.php';
     $ord=$_POST['ord'];
@@ -57,7 +59,6 @@ if (isset($_POST['submit']))
         }
         else
         {
-            die(echo 1);
             $file_name=$_FILES['file']['name']; 
             $temp_name=$_FILES["file"]["tmp_name"]; 
             $imgtype=$_FILES["file"]["type"];
@@ -65,7 +66,6 @@ if (isset($_POST['submit']))
             $ext= GetImageExtension($imgtype);
             $imagename=date("d-m-Y")."-".time().$ext; 
             $target_path = "image/".$imagename; 
-            exit(echo 1;);
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
                 $sql='UPDATE `people` SET `title` = "'.$title.'",`bills` = "'.$target_path.'",`amount` = '.$spent.',`date_time` = "'.$date.'" WHERE `person_name`="'.$user.'" and `title`="No title"';
