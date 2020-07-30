@@ -57,6 +57,7 @@ if (isset($_POST['submit']))
         }
         else
         {
+            die(echo 1);
             $file_name=$_FILES['file']['name']; 
             $temp_name=$_FILES["file"]["tmp_name"]; 
             $imgtype=$_FILES["file"]["type"];
