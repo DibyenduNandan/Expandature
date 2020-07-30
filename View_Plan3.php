@@ -8,8 +8,6 @@ $msg="";
 $css_class="";
 if (isset($_POST['submit']))
 {
-    echo 1;
-    die();
     include 'partition/_dbconnect.php';
     include 'partition/array_to_name.php';
     $ord=$_POST['ord'];
@@ -29,6 +27,10 @@ if (isset($_POST['submit']))
     $Sql2= 'SELECT * FROM people where title="'.$title.'" AND sno="'.$sno.'"';
     $result2=mysqli_query($conn,$Sql2);
     $numExistRows2=mysqli_num_rows($result2);
+    echo $numExistRows;
+    echo $numExistRows2;
+    echo $_FILES['file']['name'];
+    die();
     if ($numExistRows==0)
     {
         $Sql2= 'INSERT INTO `people`(`sno` ,`person_name`,`date_time`) VALUES ("'.$_POST['sno'].'","'.$_POST['user'].'",1000-01-01)';
