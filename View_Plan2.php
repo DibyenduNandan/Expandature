@@ -61,7 +61,6 @@ while($i<=$_GET['no'] && $numExistRows==0)
     echo var_dump($result);
     $i+=1;
 }
-die();
 $permission=0;
 $class="";
 $class2="modal fade";
