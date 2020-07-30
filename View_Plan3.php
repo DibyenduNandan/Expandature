@@ -8,7 +8,7 @@ $msg="";
 $css_class="";
 if (isset($_POST['submit']))
 {
-    echo ;
+    echo 1;
     die();
     include 'partition/_dbconnect.php';
     include 'partition/array_to_name.php';
