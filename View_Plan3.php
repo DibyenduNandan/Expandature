@@ -66,6 +66,8 @@ if (isset($_POST['submit']))
             $target_path = "image/".$imagename; 
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
+                echo 1;
+                exit(1);
                 $sql='UPDATE `people` SET `title` = "'.$title.'",`bills` = "'.$target_path.'",`amount` = '.$spent.',`date_time` = "'.$date.'" WHERE `person_name`="'.$user.'" and `title`="No title"';
                 $result=mysqli_query($conn,$sql);
                 if($result){
