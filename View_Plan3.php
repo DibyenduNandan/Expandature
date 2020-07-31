@@ -68,7 +68,6 @@ if (isset($_POST['submit']))
             $imagename=date("d-m-Y")."-".time().$ext; 
             $target_path = "image/".$imagename; 
             echo $target_path.'<br>';
-            die();
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
                 $sql='UPDATE `people` SET `title` = "'.$title.'",`bills` = "'.$target_path.'",`amount` = '.$spent.',`date_time` = "'.$date.'" WHERE `person_name`="'.$user.'" and `title`="No title"';
