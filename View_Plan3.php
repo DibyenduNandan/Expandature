@@ -27,10 +27,9 @@ if (isset($_POST['submit']))
     $Sql2= 'SELECT * FROM people where title="'.$title.'" AND sno="'.$sno.'"';
     $result2=mysqli_query($conn,$Sql2);
     $numExistRows2=mysqli_num_rows($result2);
-    echo $numExistRows;
-    echo $numExistRows2;
-    echo $_FILES['file']['name'];
-    die();
+    echo $numExistRows.'<br>';
+    echo $numExistRows2.'<br>';
+    echo $_FILES['file']['name'].'<br>';
     if ($numExistRows==0)
     {
         $Sql2= 'INSERT INTO `people`(`sno` ,`person_name`,`date_time`) VALUES ("'.$_POST['sno'].'","'.$_POST['user'].'",1000-01-01)';
@@ -68,6 +67,8 @@ if (isset($_POST['submit']))
             $ext= GetImageExtension($imgtype);
             $imagename=date("d-m-Y")."-".time().$ext; 
             $target_path = "image/".$imagename; 
+            echo $target_path.'<br>';
+            die();
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
                 $sql='UPDATE `people` SET `title` = "'.$title.'",`bills` = "'.$target_path.'",`amount` = '.$spent.',`date_time` = "'.$date.'" WHERE `person_name`="'.$user.'" and `title`="No title"';
