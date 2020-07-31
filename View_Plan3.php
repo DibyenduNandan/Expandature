@@ -69,7 +69,7 @@ if (isset($_POST['submit']))
             $target_path = "image/".$imagename; 
             echo $target_path.'<br>';
             echo $imgtype.'<br>';
-            echo $_FILES['file']['error'];
+            echo move_uploaded_file($temp_name, $target_path);
             die();
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
