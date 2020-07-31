@@ -68,7 +68,7 @@ if (isset($_POST['submit']))
             $imagename=date("d-m-Y")."-".time().$ext; 
             $target_path = "image/".$imagename; 
             echo $target_path.'<br>';
-            echo $imgtype;
+            echo $imgtype.'<br>';
             echo $ext;
             die();
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
