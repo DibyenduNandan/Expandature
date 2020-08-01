@@ -66,8 +66,8 @@ if (isset($_POST['submit']))
             include 'partition/_image.php';
             $ext= GetImageExtension($imgtype);
             $imagename=date("d-m-Y")."-".time().$ext; 
-            $target_path=$_SERVER['DOCUMENT_ROOT']."/"."img/".$imagename;
-            // $target_path = "image/".$imagename; 
+            // $target_path=$_SERVER['DOCUMENT_ROOT']."/"."img/".$imagename;
+            $target_path = "image/".$imagename; 
             echo $target_path.'<br>';
             echo $imgtype.'<br>';
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
