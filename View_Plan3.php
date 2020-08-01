@@ -70,8 +70,6 @@ if (isset($_POST['submit']))
             // $target_path = "image/".$imagename; 
             echo $target_path.'<br>';
             echo $imgtype.'<br>';
-            echo var_dump(move_uploaded_file($temp_name, $target_path));
-            die();
             if(move_uploaded_file($temp_name, $target_path) && $ext!=false)
             {
                 $sql='UPDATE `people` SET `title` = "'.$title.'",`bills` = "'.$target_path.'",`amount` = '.$spent.',`date_time` = "'.$date.'" WHERE `person_name`="'.$user.'" and `title`="No title"';
