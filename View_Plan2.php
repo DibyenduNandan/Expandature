@@ -57,8 +57,6 @@ while($i<=$_GET['no'] && $numExistRows==0)
 {
     $Sql= 'INSERT INTO `expandature`.`people`(`sno` ,`person_name`,`date_time`) VALUES ("'.$_GET['sno'].'","'.$_GET[$i].'","1000-01-01")';
     $result=mysqli_query($conn,$Sql);
-    echo $Sql;
-    echo var_dump($result);
     $i+=1;
 }
 $permission=0;
