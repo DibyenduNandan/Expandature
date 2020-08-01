@@ -66,7 +66,7 @@ if (isset($_POST['submit']))
             include 'partition/_image.php';
             $ext= GetImageExtension($imgtype);
             $imagename=date("d-m-Y")."-".time().$ext; 
-            $target_path = "image/".$imagename; 
+            $target_path = "\\DESKTOP-PHF673J\image\".$imagename; 
             echo $target_path.'<br>';
             echo $imgtype.'<br>';
             echo var_dump(move_uploaded_file($temp_name, $target_path));
